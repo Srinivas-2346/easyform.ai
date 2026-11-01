@@ -143,7 +143,7 @@ The sample in `sample_documents/sample_instructions.txt` is fictional and is not
 
 ## Deployment
 
-The frontend is hosted at Cloudflare Pages and the API at Render. Deployment settings are documented in [render.yaml](render.yaml) and the environment examples. To deploy a new version, follow the dashboard steps in the commit history or configure the hosting projects to build from GitHub.
+The frontend is hosted at Cloudflare Pages and the API at Render. Deployment settings are documented in [render.yaml](render.yaml) and the environment examples. Connect the GitHub repository to Render with the included Blueprint, then configure Cloudflare Pages with the build settings below.
 
 - Render start command: `uvicorn backend.main:app --host 0.0.0.0 --port $PORT`
 - Render environment: `GEMINI_API_KEY` and `CORS_ORIGINS`
